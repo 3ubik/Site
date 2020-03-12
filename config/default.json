@@ -1,0 +1,6 @@
+{
+    "port":5000,
+    "jwtSecret":"3ubik",
+    "mongoUri":"mongodb+srv://nikita:1488@cluster0-eznjm.mongodb.net/test?retryWrites=true&w=majority"
+   // "mongoUri": "mongodb+srv://nikita:22881488@cluster0-4f80x.mongodb.net/app?retryWrites=true&w=majority"
+}
