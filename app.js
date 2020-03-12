@@ -11,12 +11,12 @@ app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/table',require('./routes/table.routes'))
 
 
-if (process.env.NODE_ENV=== 'production') {
+/*if (process.env.NODE_ENV=== 'production') {
     app.use('/',express.static(path.join(__dirname,'client','build')))
     app.get('*',(req,res)=>{
         res.sendFile(path.resolve(__dirname,'client','build', 'index.html'))
     })
-}
+}*/
 //const PORT=config.get('port')||5000
 const PORT=process.env.PORT||5000
 
