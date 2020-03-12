@@ -4,12 +4,10 @@
   "description": "WebApp",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app.js",
+    "start": "node app.js",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
-    "client:install": "npm install --prefix client",
-    "client:build": "npm run build --prefix client",
-    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+    "dev": " concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "nik"
@@ -20,7 +18,6 @@
     "bcryptjs": "^2.4.3",
     "bootstrap": "^4.4.1",
     "config": "^3.3.0",
-    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.4.0",
     "jquery": "^3.4.1",
@@ -31,7 +28,7 @@
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
-    "cross-env": "^6.0.3",
+    
     "nodemon": "^2.0.2"
   }
 }
